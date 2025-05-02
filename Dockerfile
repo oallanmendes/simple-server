@@ -1,6 +1,6 @@
-FROM denoland/deno:ubuntu
+FROM denoland/deno:alpine
 
-RUN apt install curl wget
+RUN apk add --no-cache curl
 
 EXPOSE 8000
 WORKDIR /app
